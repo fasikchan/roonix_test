@@ -1,0 +1,11 @@
+<% if @grid %>
+  <table class="table">
+    <% @grid.each do |row| %>
+      <tr>
+        <% row.each do |col| %>
+          <th> <%= col %> </th>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
